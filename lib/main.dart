@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'APP location',
       theme: ThemeData(
-        primarySwatch: Colors.cyan,
+        primarySwatch: Colors.blue,
       ),
       home: Login(),
     );
