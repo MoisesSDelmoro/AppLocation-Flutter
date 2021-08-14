@@ -1,3 +1,4 @@
+import 'package:app/Login/login.dart';
 import 'package:app/services/location.dart';
 import 'package:flutter/material.dart';
 
@@ -11,9 +12,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'APP location',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.cyan,
       ),
-      home: LocationApp(),
+      home: Login(),
     );
   }
 }

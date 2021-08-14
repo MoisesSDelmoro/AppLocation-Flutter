@@ -33,11 +33,13 @@ class LocationApp extends StatelessWidget {
     longitude = _locationData.longitude!;
 
     locationStudent = [latitude, longitude];
-    print("--------------------------------------------------");
-    print(latitude);
-    print("++++++");
-    print(longitude);
-    print("--------------------------------------------------");
+    print(" ________________________");
+    print("| Latitude:  " +
+        latitude.toString() +
+        " |\n| Longitude: " +
+        longitude.toString() +
+        " |");
+    print("|________________________|");
     return locationStudent;
   }
 
