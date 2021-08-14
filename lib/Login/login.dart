@@ -5,7 +5,7 @@ class Login extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
+    final size = MediaQuery.of(context).size;
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -17,23 +17,63 @@ class Login extends StatelessWidget {
           ),
         ),
       ),
-      body: Center(
-        child: Container(
-          width: size.width * 0.80,
-          height: size.height * 0.07,
-          decoration: BoxDecoration(
-            color: Colors.cyan,
-            borderRadius: BorderRadius.all(
-              Radius.circular(50),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Center(
+            child: Container(
+              width: size.width * 0.85,
+              height: size.height * 0.09,
+              decoration: BoxDecoration(
+                color: Colors.black12,
+                borderRadius: BorderRadius.all(
+                  Radius.circular(50),
+                ),
+              ),
+              child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset(
+                      "assets/login/google.png",
+                    ),
+                  ),
+                  Text(
+                    'Login com conta Google',
+                    style: TextStyle(fontSize: 20.0, color: Colors.black54),
+                  ),
+                ],
+              ),
             ),
           ),
-          child: Center(
-            child: Text(
-              'Tamanho    : ${size.height}',
-              style: TextStyle(fontSize: 20.0, color: Colors.white),
+          Center(
+            child: Container(
+              width: size.width * 0.85,
+              height: size.height * 0.09,
+              decoration: BoxDecoration(
+                color: Colors.black12,
+                borderRadius: BorderRadius.all(
+                  Radius.circular(50),
+                ),
+              ),
+              child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    child: Image.asset(
+                      "assets/login/user.png",
+                    ),
+                  ),
+                  Text(
+                    'Login com conta Google',
+                    style: TextStyle(fontSize: 20.0, color: Colors.black54),
+                  ),
+                ],
+              ),
             ),
           ),
-        ),
+        ],
       ),
     );
   }
