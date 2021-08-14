@@ -8,7 +8,7 @@ class Login extends StatelessWidget {
     final size = MediaQuery.of(context).size;
 
     return Scaffold(
-      backgroundColor: Colors.lightBlue.shade200,
+      backgroundColor: Colors.blue.shade300,
       appBar: AppBar(
         title: const Center(
           child: Text(
@@ -23,7 +23,7 @@ class Login extends StatelessWidget {
             width: size.width,
             height: size.height * 0.50,
             decoration: BoxDecoration(
-              color: Colors.lightBlue.shade200,
+              color: Colors.blue.shade300,
             ),
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 30),
